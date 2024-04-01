@@ -53,7 +53,7 @@ Products
 -[Winter Style Mug](https://assets-global.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a223decdff8_ronaldo-arthur-vidal-66241-unsplash.jpg)
 -[Ceramic Tea](https://assets-global.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7ae493ece012_rawpixel-645289-unsplash.jpg)
 -[No Handle Bar Cup](https://assets-global.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a8461ece016_nathan-dumlao-643391-unsplash.jpg)
--[Espresso Cup by Mugs.co](https://assets-global.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a1db2ece009_natanja-grun-600152-unsplash.jpg)
+Cup by Mugs.co](https://assets-global.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a1db2ece009_natanja-grun-600152-unsplash.jpg)
 -[Summer Designer Cup](https://assets-global.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a81a6ecdfe7_levi-guzman-1077850-unsplash.jpg)
 
 Coffee Magazine
