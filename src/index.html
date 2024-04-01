@@ -11,6 +11,9 @@
 
 <body>
     <!-- ! practice naming each name element => set id -->
+    <!-- ! practice naming each name element => set id -->
+    <!-- ! practice naming each name element => set id -->
+
     <div id="container-wapper" class="max-w-screen-2xl px-8 mx-auto relative">
         <!-- header -->
         <header class="relative max-w-screen-xl mx-auto flex justify-between py-4 border-test">
@@ -45,7 +48,7 @@
                 </div> -->
 
                 <!-- nav cart -->
-                <div id="header-nav-cart" class="flex justify-end gap-2 ">
+                <div id="header-nav-cart" class="flex justify-end gap-2">
                     <div id="header-nav-cart__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
@@ -54,8 +57,11 @@
                         </svg>
                     </div>
                     <div id="header-nav-cart__content" class="flex items-center gap-2 cursor-pointer">
-                        <p id="header-nav-cart__text" class="uppercase text-xs tracking-widest">Cart</p>
-                        <div id="header-nav-cart__number" class="bg-gray-500 rounded-full px-2  text-white text-sm">0
+                        <p id="header-nav-cart__text" class="uppercase text-xs tracking-widest">
+                            Cart
+                        </p>
+                        <div id="header-nav-cart__number" class="bg-gray-500 rounded-full px-2 text-white text-sm">
+                            0
                         </div>
                     </div>
                 </div>
@@ -65,23 +71,27 @@
             <div id="header-menu-toggle" class="min-w-5 w-5 h-5 cursor-pointer relative top-4 right-0 lg:hidden">
                 <span class="toggle__hamburger"></span>
             </div>
-
         </header>
         <!--end header -->
 
-
         <main>
             <!-- hero -->
-            <section id="main-hero" class="text-white/90 text-center py-32 px-12 space-y-20  h-auto max-lg:relative max-lg:left-0 max-lg:right-0 border-test">
+            <section id="main-hero"
+                class="main-hero text-white/90 text-center py-32 px-12 space-y-20 h-auto max-lg:relative max-lg:left-0 max-lg:right-0 border-test">
                 <div id="main-hero-text">
-                    <p id="main-hero-eyebrow" class="uppercase text-xs font-semibold tracking-widest">Best Place To Buy Design</p>
+                    <p id="main-hero-eyebrow" class="uppercase text-xs font-semibold tracking-widest">
+                        Best Place To Buy Design
+                    </p>
                     <h1 id="main-hero-title" class="font-light my-4">Coffee Mugs</h1>
                     <p id="main-hero-descript" class="w-2/3 mx-auto">
-                        The most versatile furniture system ever created. Designed to fit your life, made to move and grow.
+                        The most versatile furniture system ever created. Designed to fit
+                        your life, made to move and grow.
                     </p>
                 </div>
                 <div id="main-hero-explore">
-                    <button type="submit" class="btn text-xs uppercase font-semibold tracking-widest">Explore our products</button>
+                    <button type="submit" class="btn text-xs uppercase font-semibold tracking-widest">
+                        Explore our products
+                    </button>
                 </div>
             </section>
             <!--end hero -->
@@ -89,41 +99,94 @@
             <!-- story -->
             <section id="main-story" class="py-20 text-center mx-auto space-y-8 w-full md:w-3/4 sm:2/4">
                 <div id="main-story-title">
-                    <h2>Even the all-powerful Pointing has no control about the blind texts.</h2>
+                    <h2>
+                        Even the all-powerful Pointing has no control about the blind
+                        texts.
+                    </h2>
                 </div>
                 <div id="main-story-descript">
-                    <p class="text-clr-gray">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</>
+                    <p class="text-clr-gray">
+                        It is a paradisematic country, in which roasted parts of sentences
+                        fly into your mouth. Even the all-powerful Pointing has no control
+                        about the blind texts it is an almost unorthographic life One day
+                        however a small line of blind text by the name of Lorem Ipsum
+                        decided to leave for the far World of Grammar.
+                    </p>
                 </div>
-                <div id="main-story-read__full" class="">
-                    <a href="#" class="text-base -text--clr-Cape_Palliser/90 pb-1 border-b-2 -border--clr-Cape_Palliser/30 hover:-text--clr-Ebony_Clay hover:-border--clr-Cape_Palliser duration-500 ease-in-out">Read the full Story</a>
+                <div id="main-story-read__full">
+                    <a href="#"
+                        class="text-base -text--clr-Cape_Palliser/90 pb-1 border-b-2 -border--clr-Cape_Palliser/30 hover:-text--clr-Ebony_Clay hover:-border--clr-Cape_Palliser duration-500 ease-in-out">Read
+                        the full Story</a>
                 </div>
             </section>
             <!--end story -->
 
-            <section id="main-featured">
-                featured
+            <!-- featured -->
+            <section id="main-featured" class="py-8">
+                <div id="main-featured-title" class="flex justify-center items-center py-20">
+                    <span class="main-title-wing"></span>
+                    <p class="main-title">Featured mugs</p>
+                    <span class="main-title-wing"></span>
+                </div>
+
+                <div id="main-featured-card__list" class="flex flex-col gap-20 justify-center items-center sm:flex-row sm:gap-8">
+                    <!--* card normal -->
+                    
+                    <div id="main-featured-card" class="main-featured-card">
+                        <div id="main-featured-card--img" class="relative border-test">
+                            <img src="../asset/coffee/Pink_Premium.jpg" alt="image pink premium">
+
+                        </div>
+                        <div id="main-featured-card--title" class="pt-8 pb-4">
+                            <h4>Pink Premium Ceramic</h4>
+                        </div>
+                        <div id="main-featured-card--price">
+                            <p class="main-featured-card--price-text">$ 99.00 USD</p>
+                        </div>
+                    </div>
+                    <!--* card sale -->
+                    <div id="main-featured-card" class="main-featured-card">
+                        <div id="main-featured-card--img" class="relative border-test">
+                            <img src="../asset/coffee/Golden_Designers.jpg" alt="image pink premium">
+                            <div id="main-featureed-card--img__sale" class="main-featured-card--img__sale">
+                                <p class="main-featured-card--img__sale-text">On Sale.</p>
+                            </div>
+                        </div>
+                        <div id="main-featured-card--title" class="pt-8 pb-4">
+                            <h4>Golden Designers Mug</h4>
+                        </div>
+                        <div id="main-featured-card--price__wrap" class="flex justify-center items-center gap-4">
+                            <div class="main-featured-card--price__sale">
+                                <p class="main-featured-card--price__sale-text">$50.00</p>
+                            </div>
+                            <div class="main-featured-card--price">
+                                <p class="main-featured-card--price-text line-through">$ 69.00 USD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+            <!--end featured -->
+
+            <!-- products -->
             <section id="main-products">
-                products
+                <div id="main-featured-title" class="flex justify-center items-center py-20">
+                    <span class="main-title-wing"></span>
+                    <p class="main-title">More products</p>
+                    <span class="main-title-wing"></span>
+                </div>
+
             </section>
-            <section id="main-shopping">
-                shopping
-            </section>
-            <div id="bg-img-full">
-                background image full
-            </div>
-            <section id="main-lifestyle">
-                life style
-            </section>
-            <section id="main-subcribe">
-                subcribe
-            </section>
+            <!--end products -->
+
+            <section id="main-shopping">shopping</section>
+            <div id="bg-img-full">background image full</div>
+            <section id="main-lifestyle">life style</section>
+            <section id="main-subcribe">subcribe</section>
         </main>
 
-        <footer>
-        </footer>
+        <footer></footer>
     </div>
-
 </body>
 
 </html>

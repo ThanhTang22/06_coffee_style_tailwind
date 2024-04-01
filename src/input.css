@@ -7,10 +7,10 @@
 
 @layer base{
     body{
-        @apply font-body text-lg
+        @apply font-sans text-lg
     }
     h1,h2,h3,h4,h5{
-        @apply font-sans font-normal
+        @apply font-normal
     }
     h1{
         @apply text-5xl
@@ -39,10 +39,41 @@
         @apply uppercase text-xs font-semibold tracking-widest 
     }
 
-
     .btn{
         @apply bg-white text-black py-4 px-8 
     }
+
+    /* main */
+    .main-title{
+        @apply uppercase text-xs font-semibold tracking-widest -text--clr-Ebony_Clay/60 px-4
+    }
+    .main-title-wing{
+        @apply h-[2px] w-8 -bg--clr-Ebony_Clay/5 inline-block
+    }
+
+    /** product */
+
+    /* card */
+    .main-featured-card{
+        @apply text-center max-w-96 -bg--clr-Cape_Palliser/5 pb-8
+    }
+
+    /* card img */
+    .main-featured-card--img__sale{
+        @apply absolute top-2 right-2 bg-white py-2 px-4
+    }
+    .main-featured-card--img__sale-text{
+        @apply text-sm font-semibold -text--clr-Cape_Palliser
+    }
+    
+    /* card price  */
+    .main-featured-card--price-text{
+        @apply text-sm -text--clr-Ebony_Clay/70
+    }
+    .main-featured-card--price__sale-text{
+        @apply text-xl -text--clr-Cape_Palliser
+    }
+
 }
 
 @layer utilities{
@@ -88,8 +119,8 @@
     }
 
 
-    /** ID MAIN */
-    #main-hero{
+    /** hero background */
+    .main-hero{
         background-image:  linear-gradient(
             60deg,
             rgba(5, 8, 39, 0.2),
