@@ -2,7 +2,19 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    
+    extend: {
+      fontFamily: {
+        'body': 'Karla , sans-senif',
+      },
+      colors:{
+        // Primary
+        '--clr-Ebony_Clay': '#1d1f2e',
+        '--clr-Cape_Palliser': ' #a25f4b',
+        '--clr-Black_Pearl': ' #050827'
+      }
+    },
+    
   },
   plugins: [],
 }

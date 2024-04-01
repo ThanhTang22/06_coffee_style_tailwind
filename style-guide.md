@@ -9,13 +9,16 @@ The design were created to the following width:
 
 ## Color
 
-- Color 1: #1d1f2e;
-- Color 2: #dadbf1;
-- Color 3: #000;
-- Color 4: #fff;
+Primay
 
-- hue 1: rgba(29, 31, 46, 0.1);
-- hue 2: rgba(162, 95, 75, 0.3);
+- --clr-Ebony_Clay: #1d1f2e;
+- --clr-Cape_Palliser: #a25f4b;
+- --clr-Black_Pearl: #050827;
+
+Neutral
+
+- --clr-Black: #000;
+- --clr-White: #fff;
 
 ## Typograph
 
@@ -33,6 +36,9 @@ The design were created to the following width:
 ## Asset
 
 ### Images
+
+Hero
+-[Coffee Mugs](https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a58aaecdfba_Header-Pic.jpg)
 
 Featured mugs
 
