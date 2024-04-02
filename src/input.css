@@ -55,7 +55,7 @@
 
     /* card */
     .main-featured-card{
-        @apply text-center max-w-96 -bg--clr-Cape_Palliser/5 pb-8
+        @apply text-center max-w-md -bg--clr-Cape_Palliser/5 pb-8
     }
 
     /* card img */
