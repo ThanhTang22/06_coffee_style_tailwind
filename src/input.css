@@ -16,16 +16,19 @@
         @apply text-5xl
     }
     h2{
-        @apply text-3xl
+        @apply text-4xl
     }
     h3{
-        @apply text-2xl
+        @apply text-3xl
     }
     h4{
-        @apply text-xl
+        @apply text-2xl
     }
     a{
         @apply font-sans
+    }
+    p{
+        @apply text-gray-500
     }
 }
 
@@ -34,14 +37,6 @@
         @apply border-red-500 border-2
     }
 
-    /* header */
-    .header-nav-menu__link-text{
-        @apply uppercase text-xs font-semibold tracking-widest 
-    }
-
-    .btn{
-        @apply bg-white text-black py-4 px-8 
-    }
 
     /* main */
     .main-title{
@@ -50,6 +45,21 @@
     .main-title-wing{
         @apply h-[2px] w-8 -bg--clr-Ebony_Clay/5 inline-block
     }
+
+
+    /* header */
+    .header-nav-menu__link-text{
+        @apply uppercase text-xs font-semibold tracking-widest 
+    }
+
+    .btn{
+        @apply bg-white text-black py-4 px-8 text-xs uppercase font-semibold tracking-widest
+    }
+    /* hero */
+    .main-hero-eyebrow{
+        @apply uppercase text-xs font-semibold tracking-widest
+    }
+
 
     /** product */
 
