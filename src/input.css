@@ -40,6 +40,13 @@
         @apply border-red-500 border-2
     }
 
+    /* btn */
+    .btn{
+        @apply bg-white text-black py-4 px-8 text-xs uppercase font-semibold tracking-widest
+    }
+
+
+
 
     /* main */
     .main-title{
@@ -55,37 +62,69 @@
         @apply uppercase text-xs font-semibold tracking-widest 
     }
 
-    .btn{
-        @apply bg-white text-black py-4 px-8 text-xs uppercase font-semibold tracking-widest
-    }
+
     /* hero */
     .main-hero-eyebrow{
         @apply uppercase text-xs font-semibold tracking-widest
     }
 
 
-    /** product */
+    /** main card */
+    .main-card--img{
+        @apply relative  overflow-hidden
+    }
 
-    /* featured card */
-    .main-featured-card{
+    .main-img__hover{
+        @apply -z-50  absolute bottom-0  w-full h-full -bg--clr-Black_Pearl/20 duration-75 ease-in-out 
+    }
+    .main-card--img:hover > .main-img__hover{
+        @apply  z-50
+    }
+
+    .btn-explore{
+        @apply absolute left-0 right-0 -bottom-full w-11/12 mx-auto duration-300 ease-in-out
+    }
+
+    .main-card--img:hover  .btn-explore{
+        @apply  bottom-3
+    }
+
+
+
+    /** featured card */
+    .main-card{
         @apply text-center max-w-md -bg--clr-Cape_Palliser/5 pb-8
     }
 
-    /* card img */
-    .main-featured-card--img__sale{
-        @apply absolute top-2 right-2 bg-white py-2 px-4
+    .main-card-title{
+        @apply text-lg tracking-widest
     }
-    .main-featured-card--img__sale-text{
+    
+
+    /* card img */
+    .main-card--img__sale{
+        @apply z-[51] absolute top-2 right-2 bg-white py-2 px-4
+    }
+    .main-card--img__sale-text{
         @apply text-sm font-semibold -text--clr-Cape_Palliser
     }
     
+
     /* card price  */
-    .main-featured-card--price-text{
+    .main-card--price-text{
         @apply text-sm -text--clr-Ebony_Clay/70
     }
-    .main-featured-card--price__sale-text{
+    .main-card--price__sale-text{
         @apply text-xl -text--clr-Cape_Palliser
     }
+
+    /* products card */
+    .main-card-products{
+        @apply max-w-xs
+    }
+
+
+
 
     /** style */
     .main-lifestyle-stories{
@@ -184,4 +223,6 @@
         background-attachment: fixed;
     }
 
+
+    
 }
