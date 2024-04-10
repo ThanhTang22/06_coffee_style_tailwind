@@ -30,15 +30,17 @@
     a{
         @apply font-sans
     }
-    p{
-        @apply text-gray-500
-    }
 }
 
 @layer components{
     .border-test{
         @apply border-red-500 border-2
     }
+
+    .container-wrapper{
+        @apply max-w-screen-xl px-12 mx-auto relative
+    }
+
 
     /* btn */
     .btn{
@@ -58,8 +60,21 @@
 
 
     /* header */
+
+    /* header menu flex */
     .header-nav-menu__link-text{
-        @apply uppercase text-xs font-semibold tracking-widest 
+        @apply uppercase -text--clr-Ebony_Clay/60 text-xs font-semibold tracking-widest relative mx-4
+        after:w-0 after:h-1 after:absolute after:bottom-0 after:left-0 after:duration-200 after:ease-in-out
+        after:hover:w-full after:hover:-bg--clr-Cape_Palliser/50
+    }
+    /* .header-nav-menu__block{
+        @apply border-test 
+    } */
+    
+    /* header menu block */
+    
+    .nav-memu-block{
+        @apply after:content-none hover:text-black block py-4 
     }
 
 
@@ -74,6 +89,7 @@
         @apply relative  overflow-hidden
     }
 
+    /*? style hover */
     .main-img__hover{
         @apply -z-50  absolute bottom-0  w-full h-full -bg--clr-Black_Pearl/20 duration-75 ease-in-out 
     }
@@ -93,7 +109,7 @@
 
     /** featured card */
     .main-card{
-        @apply text-center max-w-md -bg--clr-Cape_Palliser/5 pb-8
+        @apply text-center w-full -bg--clr-Cape_Palliser/5 pb-8 md:max-w-md
     }
 
     .main-card-title{
@@ -120,7 +136,7 @@
 
     /* products card */
     .main-card-products{
-        @apply max-w-xs
+        @apply w-full md:max-w-xs
     }
 
 
@@ -131,15 +147,24 @@
         @apply sm:flex sm:gap-4 sm:justify-center sm:items-start sm:flex-wrap 
     }
     .main-lifestyle__card{
-        @apply text-center min-h-[40rem] space-y-8 mb-8 sm:max-w-80 sm:text-left
+        @apply text-center w-full  min-h-[40rem] space-y-8 mb-8 md:max-w-80 sm:text-left
     }
 
+    
     /* style img */
     .main-lifestyle__img-wrap{
-        @apply h-72 relative overflow-hidden border-test
+        @apply  h-72 relative overflow-hidden
     }
     .main-lifestyle__img{
-        @apply h-full w-full bg-cover bg-center scale-x-[2]
+        @apply h-full w-full bg-cover bg-center md:scale-x-[2]
+    }
+
+    /*? style hover */
+    .main-lifestyle__img-wrap:hover > .main-img__hover{
+        @apply  z-50
+    }
+    .main-lifestyle__img-wrap:hover  .btn-explore{
+        @apply  bottom-3
     }
 
     /* style text */
@@ -162,10 +187,12 @@
     .content-hidden{
         visibility: hidden;
         height: 0;
+        width: 0;
     }
     .content-visible{
         visibility: visible;
         height: auto;
+        width: auto;
     }
 
     /** icon awesome */
