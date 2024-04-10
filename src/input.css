@@ -38,7 +38,7 @@
     }
 
     .container-wrapper{
-        @apply max-w-screen-xl px-12 mx-auto relative
+        @apply max-w-screen-xl px-12 mx-auto relative max-md:px-4
     }
 
 
@@ -229,11 +229,11 @@
     .main-hero{
         background-image:  linear-gradient(
             60deg,
-            rgba(5, 8, 39, 0.2),
-            rgba(5, 8, 39, 0.5)
+            rgba(5, 8, 39, 0.5),
+            rgba(5, 8, 39, 0.7)
         ),
         url(../asset/background/coffee_Mugs.jpg);
-        background-position: 50% 50%;
+        background-position: bottom;
         background-repeat: no-repeat;
         background-size: auto, cover;
 
