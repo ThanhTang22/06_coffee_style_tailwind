@@ -1,557 +1,784 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee style</title>
     <!-- CSS tailwind -->
     <link rel="stylesheet" href="./output.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- ! practice naming each name element => That's why I set the id -->
     <!-- ! practice naming each name element => That's why I set the id -->
     <!-- ! practice naming each name element => That's why I set the id -->
 
-    <div id="container-wapper" class="max-w-screen-xl px-12 mx-auto relative border-test">
-        <!-- header -->
-        <header class="relative max-w-screen-xl mx-auto flex justify-between py-4 border-test">
-            <nav id="header-nav" class="flex justify-between items-center w-[90%] lg:w-[100%]">
-                <!-- nav-logo -->
-                <div id="header-nav-logo" class="">
-                    <h4 class="font-medium">CoffeeStyle.</h4>
-                </div>
+    <div class="container-wrapper">
+      
+      <!-- header -->
+      <header
+        class="relative max-w-screen-lg mx-auto flex justify-between py-4"
+      >
+        <nav
+          id="header-nav"
+          class="flex justify-between   w-full"
+        >
+          <!-- nav-logo -->
+          <div id="header-nav-logo">
+            <h4 class="font-medium">CoffeeStyle.</h4>
+          </div>
 
-                <!-- nav-menu -->
-                <!-- <div id="header-nav-menu" class="border-test">
-                    <ul id="header-nav-menu__list" class="block text-center lg:flex">
-                        <div class="header-nav-menu__link">
-                            <a href="#home" class="header-nav-menu__link-text">Home</a>
-                        </div>
-                        <div class="header-nav-menu__link">
-                            <a href="#" class="header-nav-menu__link-text">Our products</a>
-                        </div>
-                        <div class="header-nav-menu__link">
-                            <a href="#" class="header-nav-menu__link-text">Blog</a>
-                        </div>
-                        <div class="header-nav-menu__link">
-                            <a href="#" class="header-nav-menu__link-text">About</a>
-                        </div>
-                        <div class="header-nav-menu__link">
-                            <a href="#" class="header-nav-menu__link-text">Contact</a>
-                        </div>
-                        <div class="header-nav-menu__link">
-                            <a href="#" class="header-nav-menu__link-text">StyleGuide</a>
-                        </div>
-                    </ul>
-                </div> -->
+          <!-- nav-menu flex -->
+          <div id="header-nav-menu">
+            <ul id="header-nav-menu__list" class="text-center flex max-lg:content-hidden">
+              <li class="header-nav-menu__link">
+                <a href="#home" class="header-nav-menu__link-text text-black">Home</a>
+              </li>
+              <li class="header-nav-menu__link">
+                <a href="#home" class="header-nav-menu__link-text">Our Products</a>
+              </li>
+              <li class="header-nav-menu__link">
+                <a href="#home" class="header-nav-menu__link-text">Blog</a>
+              </li>
+              <li class="header-nav-menu__link">
+                <a href="#home" class="header-nav-menu__link-text">About</a>
+              </li>
+              <li class="header-nav-menu__link">
+                <a href="#home" class="header-nav-menu__link-text">Contact</a>
+              </li>
+              <li class="header-nav-menu__link">
+                <a href="#home" class="header-nav-menu__link-text">StyleGuide</a>
+              </li>
+            </ul>
+          </div>
 
-                <!-- nav cart -->
-                <div id="header-nav-cart" class="flex justify-end gap-2">
-                    <div id="header-nav-cart__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                        </svg>
-                    </div>
-                    <div id="header-nav-cart__content" class="flex items-center gap-2 cursor-pointer">
-                        <p id="header-nav-cart__text" class="uppercase text-xs tracking-widest">
-                            Cart
-                        </p>
-                        <div id="header-nav-cart__number" class="bg-gray-500 rounded-full px-2 text-white text-sm">
-                            0
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- header nav menu  toggle -->
-            <div id="header-menu-toggle" class="min-w-5 w-5 h-5 cursor-pointer relative top-4 right-0 lg:hidden">
-                <span class="toggle__hamburger"></span>
+          <!-- nav cart -->
+          <div id="header-nav-cart" class="flex items-center justify-end gap-1 max-lg:mr-8 max-sm:content-hidden">
+            <div id="header-nav-cart__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                />
+              </svg>
             </div>
-        </header>
-        <!--end header -->
+            <div
+              id="header-nav-cart__content"
+              class="flex items-center gap-1 cursor-pointer"
+            >
+              <p
+                id="header-nav-cart__text"
+                class="uppercase text-xs tracking-widest"
+              >
+                Cart
+              </p>
+              <div
+                id="header-nav-cart__number"
+                class="bg-gray-500 rounded-full px-2 text-white text-sm"
+              >
+                0
+              </div>
+            </div>
+          </div>
+          <!--end nav cart -->
+    
+          
+        </nav>
+        
+        <!-- header nav menu  toggle -->
+        <div
+          id="header-menu-toggle"
+          class="min-w-5 w-5 h-5 cursor-pointer relative top-4 right-0 lg:hidden"
+        >
+          <span class="toggle__hamburger"></span>
+        </div>
 
-        <main>
-            <!-- hero -->
-            <section id="main-hero"
-                class="main-hero text-white/90 text-center py-32 px-12 space-y-20 h-auto relative max-lg:relative max-lg:left-0 max-lg:right-0 border-test">
-                <div id="main-hero-text">
-                    <p id="main-hero-eyebrow" class="main-hero-eyebrow">
-                        Best Place To Buy Design
-                    </p>
-                    <h1 id="main-hero-title" class="font-light my-4">Coffee Mugs</h1>
-                    <p id="main-hero-descript" class="w-2/3 mx-auto">
-                        The most versatile furniture system ever created. Designed to fit
-                        your life, made to move and grow.
-                    </p>
+        <!-- nav-menu block -->
+        <div id="header-nav-menu__block" class="absolute left-0 right-0 top-16 w-full py-8 bg-white z-[9999] content-hidden">
+          <ul id="header-nav-menu__list" class="text-center">
+            <li>
+              <a href="#home" class="header-nav-menu__link-text text-black nav-memu-block">Home</a>
+            </li>
+            <li>
+              <a href="#home" class="header-nav-menu__link-text nav-memu-block">Our Products</a>
+            </li>
+            <li>
+              <a href="#home" class="header-nav-menu__link-text nav-memu-block">Blog</a>
+            </li>
+            <li>
+              <a href="#home" class="header-nav-menu__link-text nav-memu-block">About</a>
+            </li>
+            <li>
+              <a href="#home" class="header-nav-menu__link-text nav-memu-block">Contact</a>
+            </li>
+            <li>
+              <a href="#home" class="header-nav-menu__link-text nav-memu-block">StyleGuide</a>
+            </li>
+          </ul>
+        </div>
+        <!-- menu toggle  -->
+        <script src="../js/nav-menu.js"></script>
+
+      </header>
+      <!--end header -->
+
+
+      <main>
+        <!-- hero -->
+        <div class="relative">
+          <section
+            id="main-hero"
+            class="main-hero text-white text-center py-32 px-12 space-y-20 h-auto relative"
+          >
+            <div id="main-hero-text">
+              <p id="main-hero-eyebrow" class="main-hero-eyebrow">
+                Best Place To Buy Design
+              </p>
+              <h1 id="main-hero-title" class="font-light my-4">Coffee Mugs</h1>
+              <p id="main-hero-descript" class="w-2/3 mx-auto">
+                The most versatile furniture system ever created. Designed to fit
+                your life, made to move and grow.
+              </p>
+            </div>
+            <div id="main-hero-explore">
+              <button type="submit" class="btn">Explore our products</button>
+            </div>
+          </section>
+        </div>
+        <!--end hero -->
+
+        <!-- story -->
+        <section
+          id="main-story"
+          class="relative py-20 text-center mx-auto space-y-8 w-full md:w-3/4 sm:2/4"
+        >
+          <div id="main-story-title">
+            <h2>
+              Even the all-powerful Pointing has no control about the blind
+              texts.
+            </h2>
+          </div>
+          <div id="main-story-descript">
+            <p class="-text--clr-Black_Pearl/70">
+              It is a paradisematic country, in which roasted parts of sentences
+              fly into your mouth. Even the all-powerful Pointing has no control
+              about the blind texts it is an almost unorthographic life One day
+              however a small line of blind text by the name of Lorem Ipsum
+              decided to leave for the far World of Grammar.
+            </p>
+          </div>
+          <div id="main-story-read__full">
+            <a
+              href="#"
+              class="text-base -text--clr-Cape_Palliser/90 pb-1 border-b-2 -border--clr-Cape_Palliser/30 hover:-text--clr-Ebony_Clay hover:-border--clr-Cape_Palliser duration-500 ease-in-out"
+              >Read the full Story</a
+            >
+          </div>
+        </section>
+        <!--end story -->
+
+        <!-- featured -->
+        <section id="main-featured" class="relative py-8">
+          <div id="main-title" class="flex justify-center items-center py-20">
+            <span class="main-title-wing"></span>
+            <p class="main-title">Featured mugs</p>
+            <span class="main-title-wing"></span>
+          </div>
+
+          <div
+            id="main-featured-card__list"
+            class="flex flex-col gap-20 justify-center items-center sm:flex-row sm:gap-8"
+          >
+            <!--* card normal -->
+            <div class="main-card">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/Pink_Premium.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
                 </div>
-                <div id="main-hero-explore">
-                    <button type="submit" class="btn">
-                        Explore our products
-                    </button>
+              </div>
+              <div class="pt-8 pb-4">
+                <a href="#" class="main-card-title">Pink Premium Ceramic</a>
+              </div>
+              <div id="main-card--price">
+                <p class="main-card--price-text">$ 99.00 USD</p>
+              </div>
+            </div>
+
+            <!--* card sale -->
+            <div class="main-card">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/Golden_Designers.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-card--img__sale">
+                  <p class="main-card--img__sale-text">On Sale.</p>
                 </div>
-            </section>
-            <!--end hero -->
-
-            <!-- story -->
-            <section id="main-story" class="relative py-20  text-center mx-auto space-y-8 w-full md:w-3/4 sm:2/4">
-                <div id="main-story-title">
-                    <h2>
-                        Even the all-powerful Pointing has no control about the blind
-                        texts.
-                    </h2>
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
                 </div>
-                <div id="main-story-descript">
-                    <p class="text-clr-gray">
-                        It is a paradisematic country, in which roasted parts of sentences
-                        fly into your mouth. Even the all-powerful Pointing has no control
-                        about the blind texts it is an almost unorthographic life One day
-                        however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.
-                    </p>
+              </div>
+              <div id="main-card--title" class="pt-8 pb-4">
+                <a href="#" class="main-card-title">Golden Designers Mug</a>
+              </div>
+              <div
+                id="main-card--price__wrap"
+                class="flex justify-center items-center gap-4"
+              >
+                <div class="main-card--price__sale">
+                  <p class="main-card--price__sale-text">$50.00</p>
                 </div>
-                <div id="main-story-read__full">
-                    <a href="#"
-                        class="text-base -text--clr-Cape_Palliser/90 pb-1 border-b-2 -border--clr-Cape_Palliser/30 hover:-text--clr-Ebony_Clay hover:-border--clr-Cape_Palliser duration-500 ease-in-out">Read
-                        the full Story</a>
+                <div class="main-card--price">
+                  <p class="main-card--price-text line-through">$ 69.00 USD</p>
                 </div>
-            </section>
-            <!--end story -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--end featured -->
 
-            <!-- featured -->
-            <section id="main-featured" class="relative py-8">
-                <div id="main-title" class="flex justify-center items-center py-20">
-                    <span class="main-title-wing"></span>
-                    <p class="main-title">Featured mugs</p>
-                    <span class="main-title-wing"></span>
+        <!-- products -->
+        <section id="main-products" class="relative py-8">
+          <div id="main-title" class="flex justify-center items-center py-20">
+            <span class="main-title-wing"></span>
+            <p class="main-title">More products</p>
+            <span class="main-title-wing"></span>
+          </div>
+
+          <div
+            id="main-product-card__list"
+            class="flex flex-col gap-20 justify-center items-center flex-wrap md:flex-row md:gap-x-4 md:gap-y-20"
+          >
+            <!--* card sale -->
+            <div class="main-card main-card-products">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/red_love_cup.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-card--img__sale">
+                  <p class="main-card--img__sale-text">On Sale.</p>
                 </div>
-
-                <div id="main-featured-card__list"
-                    class="flex flex-col gap-20 justify-center items-center sm:flex-row sm:gap-8">
-                    <!--* card normal -->
-
-                    <div id="main-featured-card" class="main-featured-card">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/Pink_Premium.jpg" alt="image pink premium">
-
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>Pink Premium Ceramic</h4>
-                        </div>
-                        <div id="main-featured-card--price">
-                            <p class="main-featured-card--price-text">$ 99.00 USD</p>
-                        </div>
-                    </div>
-                    <!--* card sale -->
-                    <div id="main-featured-card" class="main-featured-card">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/Golden_Designers.jpg" alt="image pink premium">
-                            <div id="main-featureed-card--img__sale" class="main-featured-card--img__sale">
-                                <p class="main-featured-card--img__sale-text">On Sale.</p>
-                            </div>
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>Golden Designers Mug</h4>
-                        </div>
-                        <div id="main-featured-card--price__wrap" class="flex justify-center items-center gap-4">
-                            <div class="main-featured-card--price__sale">
-                                <p class="main-featured-card--price__sale-text">$50.00</p>
-                            </div>
-                            <div class="main-featured-card--price">
-                                <p class="main-featured-card--price-text line-through">$ 69.00 USD</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
                 </div>
-            </section>
-            <!--end featured -->
-
-            <!-- products -->
-            <section id="main-products" class="relative py-8">
-                <div id="main-title" class="flex justify-center items-center py-20">
-                    <span class="main-title-wing"></span>
-                    <p class="main-title">More products</p>
-                    <span class="main-title-wing"></span>
+              </div>
+              <div id="main-card--title" class="pt-8 pb-4">
+                <a href="#" class="main-card-title">Red Love Cup</a>
+              </div>
+              <div
+                id="main-card--price__wrap"
+                class="flex justify-center items-center gap-4"
+              >
+                <div class="main-card--price__sale">
+                  <p class="main-card--price__sale-text">$25.00</p>
                 </div>
-
-                <div id="main-featured-card__list"
-                    class="flex flex-col gap-20 justify-center items-center flex-wrap md:flex-row md:gap-x-4 md:gap-y-20">
-
-                    <!--* card sale -->
-                    <div id="main-featured-card" class="main-featured-card max-w-72">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/red_love_cup.jpg" alt="image pink premium">
-                            <div id="main-featureed-card--img__sale" class="main-featured-card--img__sale">
-                                <p class="main-featured-card--img__sale-text">On Sale.</p>
-                            </div>
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>Red Love Cup</h4>
-                        </div>
-                        <div id="main-featured-card--price__wrap" class="flex justify-center items-center gap-4">
-                            <div class="main-featured-card--price__sale">
-                                <p class="main-featured-card--price__sale-text">$25.00</p>
-                            </div>
-                            <div class="main-featured-card--price">
-                                <p class="main-featured-card--price-text line-through">$ 37.00 USD</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--* card sale -->
-                    <div id="main-featured-card" class="main-featured-card max-w-72">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/black_tea_cup.jpg" alt="image pink premium">
-                            <div id="main-featureed-card--img__sale" class="main-featured-card--img__sale">
-                                <p class="main-featured-card--img__sale-text">On Sale.</p>
-                            </div>
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>Black Tea Cup</h4>
-                        </div>
-                        <div id="main-featured-card--price__wrap" class="flex justify-center items-center gap-4">
-                            <div class="main-featured-card--price__sale">
-                                <p class="main-featured-card--price__sale-text">$15.00</p>
-                            </div>
-                            <div class="main-featured-card--price">
-                                <p class="main-featured-card--price-text line-through">$ 29.00 USD</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--* card normal -->
-
-                    <div id="main-featured-card" class="main-featured-card max-w-72">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/b&w.jpg" alt="image pink premium">
-
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>B&W Essentials Mug</h4>
-                        </div>
-                        <div id="main-featured-card--price">
-                            <p class="main-featured-card--price-text">$ 19.00 USD</p>
-                        </div>
-                    </div>
-
-
-                    <!--* card normal -->
-
-                    <div id="main-featured-card" class="main-featured-card max-w-72">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/winter_style.jpg" alt="image pink premium">
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>Winter Style Mug</h4>
-                        </div>
-                        <div id="main-featured-card--price">
-                            <p class="main-featured-card--price-text">$ 25.00 USD</p>
-                        </div>
-                    </div>
-
-                    <!--* card normal -->
-
-                    <div id="main-featured-card" class="main-featured-card max-w-72">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/ceramic_tea.jpg" alt="image pink premium">
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>Ceramic Tea</h4>
-                        </div>
-                        <div id="main-featured-card--price">
-                            <p class="main-featured-card--price-text">$ 46.00 USD</p>
-                        </div>
-                    </div>
-
-                    <!--* card normal -->
-
-                    <div id="main-featured-card" class="main-featured-card max-w-72">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/no_handle_bar_cup.jpg" alt="image pink premium">
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>No Handle Bar Cup</h4>
-                        </div>
-                        <div id="main-featured-card--price">
-                            <p class="main-featured-card--price-text">$ 34.00 USD</p>
-                        </div>
-                    </div>
-
-                    <!--* card normal -->
-
-                    <div id="main-featured-card" class="main-featured-card max-w-72">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/espresso_cup.jpg" alt="image pink premium">
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>Espresso Cup by Mugs.co</h4>
-                        </div>
-                        <div id="main-featured-card--price">
-                            <p class="main-featured-card--price-text">$ 25.00 USD</p>
-                        </div>
-                    </div>
-
-                    <!--* card normal -->
-
-                    <div id="main-featured-card" class="main-featured-card max-w-72">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/Pink_Premium.jpg" alt="image pink premium">
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>Pink Premium Ceramic</h4>
-                        </div>
-                        <div id="main-featured-card--price">
-                            <p class="main-featured-card--price-text">$ 99.00 USD</p>
-                        </div>
-                    </div>
-
-                    <!--* card normal -->
-
-                    <div id="main-featured-card" class="main-featured-card max-w-72">
-                        <div id="main-featured-card--img" class="relative border-test">
-                            <img src="../asset/coffee/summer_desinger.jpg" alt="image pink premium">
-                        </div>
-                        <div id="main-featured-card--title" class="pt-8 pb-4">
-                            <h4>Summer Designer Cup</h4>
-                        </div>
-                        <div id="main-featured-card--price">
-                            <p class="main-featured-card--price-text">$ 29.00 USD</p>
-                        </div>
-                    </div>
-
+                <div class="main-card--price">
+                  <p class="main-card--price-text line-through">$ 37.00 USD</p>
                 </div>
-            </section>
-            <!--end products -->
+              </div>
+            </div>
 
-            <!-- buy -->
-            <section id="main-buy" class="relative py-8">
-                <div id="main-title" class="flex justify-center items-center py-20">
-                    <span class="main-title-wing"></span>
-                    <p class="main-title">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</p>
-                    <span class="main-title-wing"></span>
+            <!--* card sale -->
+            <div class="main-card main-card-products">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/black_tea_cup.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-card--img__sale">
+                  <p class="main-card--img__sale-text">On Sale.</p>
                 </div>
-
-                <div id="main-buy-shopping" class="flex flex-col gap-12 text-center lg:flex-row-reverse lg:text-left">
-                    <div id="main-buy-shopping__wrap-magazine" class="flex justify-center gap-4">
-                        <div id="main-buy-shopping--magazine__left">
-                            <img src="../asset/magazine/magazine_image.jpg" alt="image magazine"
-                                class="max-w-[19rem] aspect-auto">
-                        </div>
-
-                        <div id="main-buy-shopping--magazine__right" class="flex flex-col justify-between">
-                            <div id="main-buy-shopping--magazine__small">
-                                <img src="../asset/magazine/magazine_small_image_1.jpg" alt="image small magazine 1"
-                                    class="max-w-40 aspect-auto">
-                            </div>
-                            <div id="main-buy-shopping--magazine__small">
-                                <img src="../asset/magazine/magazine_small_image_2.jpg" alt="image small magazine 2"
-                                    class="max-w-40 aspect-auto">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="main-buy-shopping__wrap-premium" class="py-8">
-                        <div id="main-buy-shopping--eyebrow" class="main-hero-eyebrow">
-                            <p>PREMIUM OFFER</p>
-                        </div>
-                        <div id="main-buy-shopping--title" class="py-4">
-                            <h2>Get our Coffee Magazine</h2>
-                        </div>
-                        <div id="main-buy-shopping--descript">
-                            <p class="text-base">The most versatile furniture system ever created. Designed to fit your
-                                life.</p>
-                        </div>
-                        <div id="main-buy-shopping--btn" class="pt-8">
-                            <button type="submit" class="btn -bg--clr-Ebony_Clay text-white">Start Shopping</button>
-                        </div>
-                    </div>
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
                 </div>
-            </section>
-            <!--end buy -->
+              </div>
+              <div id="main-card--title" class="pt-8 pb-4">
+                <a href="#" class="main-card-title">Black Tea Cup</a>
+              </div>
+              <div
+                id="main-card--price__wrap"
+                class="flex justify-center items-center gap-4"
+              >
+                <div class="main-card--price__sale">
+                  <p class="main-card--price__sale-text">$15.00</p>
+                </div>
+                <div class="main-card--price">
+                  <p class="main-card--price-text line-through">$ 29.00 USD</p>
+                </div>
+              </div>
+            </div>
 
-            <!-- parallax -->
-            <sectioin id="main-parallax" class="main-parallax--img">
-                <!-- <div id="main-parallax-img" class="max-h-72 overflow-hidden border-test">
+            <!--* card normal -->
+            <div class="main-card main-card-products">
+              <div class="main-card--img">
+                <img src="../asset/coffee/b&w.jpg" alt="image pink premium" />
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
+                </div>
+              </div>
+              <div class="pt-8 pb-4">
+                <a href="#" class="main-card-title">B&W Essentials Mug</a>
+              </div>
+              <div id="main-card--price">
+                <p class="main-card--price-text">$ 19.00 USD</p>
+              </div>
+            </div>
+
+            <!--* card normal -->
+            <div class="main-card main-card-products">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/winter_style.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
+                </div>
+              </div>
+              <div class="pt-8 pb-4">
+                <a href="#" class="main-card-title">Winter Style Mug</a>
+              </div>
+              <div id="main-card--price">
+                <p class="main-card--price-text">$ 25.00 USD</p>
+              </div>
+            </div>
+
+            <!--* card normal -->
+            <div class="main-card main-card-products">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/ceramic_tea.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
+                </div>
+              </div>
+              <div class="pt-8 pb-4">
+                <a href="#" class="main-card-title">Ceramic Tea</a>
+              </div>
+              <div id="main-card--price">
+                <p class="main-card--price-text">$ 46.00 USD</p>
+              </div>
+            </div>
+
+            <!--* card normal -->
+            <div class="main-card main-card-products">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/no_handle_bar_cup.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
+                </div>
+              </div>
+              <div class="pt-8 pb-4">
+                <a href="#" class="main-card-title">No Handle Bar Cup</a>
+              </div>
+              <div id="main-card--price">
+                <p class="main-card--price-text">$ 34.00 USD</p>
+              </div>
+            </div>
+
+            <!--* card normal -->
+            <div class="main-card main-card-products">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/espresso_cup.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
+                </div>
+              </div>
+              <div class="pt-8 pb-4">
+                <a href="#" class="main-card-title">Espresso Cup by Mugs.co</a>
+              </div>
+              <div id="main-card--price">
+                <p class="main-card--price-text">$ 25.00 USD</p>
+              </div>
+            </div>
+
+            <!--* card normal -->
+            <div class="main-card main-card-products">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/Pink_Premium.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
+                </div>
+              </div>
+              <div class="pt-8 pb-4">
+                <a href="#" class="main-card-title">Pink Premium Ceramic</a>
+              </div>
+              <div id="main-card--price">
+                <p class="main-card--price-text">$ 99.00 USD</p>
+              </div>
+            </div>
+
+            <!--* card normal -->
+            <div class="main-card main-card-products">
+              <div class="main-card--img">
+                <img
+                  src="../asset/coffee/summer_desinger.jpg"
+                  alt="image pink premium"
+                />
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Explore Mug
+                  </button>
+                </div>
+              </div>
+              <div class="pt-8 pb-4">
+                <a href="#" class="main-card-title">Summer Designer Cup</a>
+              </div>
+              <div id="main-card--price">
+                <p class="main-card--price-text">$ 29.00 USD</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--end products -->
+
+        <!-- buy -->
+        <section id="main-buy" class="relative py-8">
+          <div id="main-title" class="flex justify-center items-center py-20">
+            <span class="main-title-wing"></span>
+            <p class="main-title">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE</p>
+            <span class="main-title-wing"></span>
+          </div>
+
+          <div
+            id="main-buy-shopping"
+            class="flex flex-col gap-12 text-center lg:flex-row-reverse lg:text-left"
+          >
+            <div
+              id="main-buy-shopping__wrap-magazine"
+              class="flex justify-center gap-4"
+            >
+              <div id="main-buy-shopping--magazine__left">
+                <img
+                  src="../asset/magazine/magazine_image.jpg"
+                  alt="image magazine"
+                  class="max-w-[19rem] aspect-auto"
+                />
+              </div>
+
+              <div
+                id="main-buy-shopping--magazine__right"
+                class="flex flex-col justify-between"
+              >
+                <div id="main-buy-shopping--magazine__small">
+                  <img
+                    src="../asset/magazine/magazine_small_image_1.jpg"
+                    alt="image small magazine 1"
+                    class="max-w-40 aspect-auto"
+                  />
+                </div>
+                <div id="main-buy-shopping--magazine__small">
+                  <img
+                    src="../asset/magazine/magazine_small_image_2.jpg"
+                    alt="image small magazine 2"
+                    class="max-w-40 aspect-auto"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="main-buy-shopping__wrap-premium" class="py-8">
+              <div id="main-buy-shopping--eyebrow" class="main-hero-eyebrow">
+                <p>PREMIUM OFFER</p>
+              </div>
+              <div id="main-buy-shopping--title" class="py-4">
+                <h2>Get our Coffee Magazine</h2>
+              </div>
+              <div id="main-buy-shopping--descript">
+                <p class="text-base">
+                  The most versatile furniture system ever created. Designed to
+                  fit your life.
+                </p>
+              </div>
+              <div id="main-buy-shopping--btn" class="pt-8">
+                <button
+                  type="submit"
+                  class="btn -bg--clr-Ebony_Clay text-white"
+                >
+                  Start Shopping
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--end buy -->
+
+        <!-- parallax -->
+        <sectioin id="main-parallax" class="main-parallax--img">
+          <!-- <div id="main-parallax-img" class="max-h-72 overflow-hidden border-test">
                     <img src="../asset/background/parallax.jpg" alt="parallax background section"
                         class="bg-cover bg-no-repeat bg-center bg-fixed">
-                </div> --></sectioin>
-            <!--end parallax -->
+                </div> --></sectioin
+        >
+        <!--end parallax -->
 
-            <!-- life style -->
-            <section id="main-lifestyle" class="relative py-8">
-                <div id="main-title" class="flex justify-center items-center py-20">
-                    <span class="main-title-wing"></span>
-                    <p class="main-title">
-                        BEHIND THE MUGS, LIFESTYLE STORIES
-                    </p>
-                    <span class="main-title-wing"></span>
+        <!-- life style -->
+        <section id="main-lifestyle" class="relative py-8">
+          <div id="main-title" class="flex justify-center items-center py-20">
+            <span class="main-title-wing"></span>
+            <p class="main-title">BEHIND THE MUGS, LIFESTYLE STORIES</p>
+            <span class="main-title-wing"></span>
+          </div>
+
+          <div class="main-lifestyle-stories">
+            <div class="main-lifestyle__card">
+              <div class="main-lifestyle__img-wrap">
+                <a href="#">
+                  <img
+                    src="../asset/lifestyle_stories/cafe_lifestyle_post_1.jpg"
+                    alt="cafe lifestyle post 1"
+                    class="main-lifestyle__img"
+                  />
+                </a>
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Read the full story
+                  </button>
                 </div>
-
-                <div class="main-lifestyle-stories">
-
-                    <div class="main-lifestyle__card">
-                        <div class="main-lifestyle__img-wrap">
-                            <a href="#">
-                                <img src="../asset/lifestyle_stories/cafe_lifestyle_post_1.jpg" alt="cafe lifestyle post 1" class="main-lifestyle__img">
-                            </a>
-                        </div>
-                        <div class="main-lifestyle__text">
-                            <h5 id="main-lifestyle__title">
-                                <a href="#">Health Check: why do I get a headache when I haven’t had my coffee?</a>
-                            </h5>
-                            <p class="main-lifestyle__descript">
-                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                            </p>
-                            <p class="main-lifestyle__day">
-                                OCTOBER 9, 2018
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="main-lifestyle__card">
-                        <div class="main-lifestyle__img-wrap">
-                            <a href="#">
-                                <img src="../asset/lifestyle_stories/cafe_lifestyle_post_2.jpg" alt="cafe lifestyle post 1" class="main-lifestyle__img">
-                            </a>
-                        </div>
-                        <div class="main-lifestyle__text">
-                            <h5 id="main-lifestyle__title">
-                                <a href="#">How long does a cup of coffee keep you awake?</a>
-                            </h5>
-                            <p class="main-lifestyle__descript">
-                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                            </p>
-                            <p class="main-lifestyle__day">
-                                OCTOBER 9, 2018
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="main-lifestyle__card">
-                        <div class="main-lifestyle__img-wrap">
-                            <a href="#">
-                                <img src="../asset/lifestyle_stories/cafe_lifestyle_post_3.jpg" alt="cafe lifestyle post 1" class="main-lifestyle__img">
-                            </a>
-                        </div>
-                        <div class="main-lifestyle__text">
-                            <h5 id="main-lifestyle__title">
-                                <a href="#">Recent research suggests that heavy coffee drinkers may reap health benefits.</a>
-                            </h5>
-                            <p class="main-lifestyle__descript">
-                                It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                            </p>
-                            <p class="main-lifestyle__day">
-                                OCTOBER 9, 2018
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-            <!--end life style -->
-
-            <section id="main-subcribe" class="-bg--clr-Ebony_Clay text-center py-20">
-                <div id="main-title" class="flex justify-center items-center ">
-                    <span class="main-title-wing bg-slate-700"></span>
-                    <p class="main-title text-slate-400">
-                        SIGN UP AND GET FREE COFFEE BAGS
-                    </p>
-                    <span class="main-title-wing bg-slate-700"></span>
-                </div>
-
-                <div class="main-sub">
-                    <div id="main-sub-title" class="py-8">
-                        <h2 class="text-white">Coffee Updates</h2>
-                    </div>
-                    <div id="main-sub-form">
-                        <form action="#" method="get" class="flex justify-center gap-2">
-                            <input type="text" name="userGmail" id="txtGmail" placeholder="Customer@coffeestyle.io" class="py-3 px-6 w-1/2 -bg--clr-Ebony_Clay border-2 border-slate-700 shadow-sm uppercase text-xs text-slate-700 tracking-widest">
-                            <button type="submit" class="btn">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-
-            </section>
-        </main>
-
-        <footer id="footer" class="py-20 text-center border-test">
-            <div id="footer-inform" class="space-y-6">
-                <div id="footer-inform-title">
-                    <h5 class="font-semibold">CoffeeStyle.</h5>
-                </div>
-                <div id="footer-inform-describe">
-                    <p class="text-sm">
-                        Delivering the best coffee life since 1996. From coffee geeks to the real ones.
-                    </p>
-                </div>
-                <div id="footer-inform-born">
-                    <a href="#" class="text-xs text-slate-400">
-                        CoffeeStyle Inc. &copy; 1996
-                    </a>
-                </div>
+              </div>
+              <div class="main-lifestyle__text">
+                <h5 id="main-lifestyle__title">
+                  <a href="#"
+                    >Health Check: why do I get a headache when I haven’t had my
+                    coffee?</a
+                  >
+                </h5>
+                <p class="main-lifestyle__descript">
+                  It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth.
+                </p>
+                <p class="main-lifestyle__day">OCTOBER 9, 2018</p>
+              </div>
             </div>
 
-            <div class="lg:flex lg:justify-evenly lg:text-left lg:pt-8">
-                <div id="footer-menu" class="py-12">
-                    <p id="footer-menu-title" class="text-base font-semibold pb-8 uppercase text-slate-600 tracking-widest">Menu</p>
-                    <ul id="footer-menu-list" class="space-y-4 text-sm">
-                        <li id="footer-menu-link">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li id="footer-menu-link">
-                            <a href="#products">Our Products</a>
-                        </li>
-                        <li id="footer-menu-link">
-                            <a href="#about">About</a>
-                        </li>
-                        <li id="footer-menu-link">
-                            <a href="#contact">Contact</a>
-                        </li>
-                        <li id="footer-menu-link">
-                            <a href="#styleGuide">StyleGuide</a>
-                        </li>
-                    </ul>
+            <div class="main-lifestyle__card">
+              <div class="main-lifestyle__img-wrap">
+                <a href="#">
+                  <img
+                    src="../asset/lifestyle_stories/cafe_lifestyle_post_2.jpg"
+                    alt="cafe lifestyle post 1"
+                    class="main-lifestyle__img"
+                  />
+                </a>
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Read the full story
+                  </button>
                 </div>
-                <div id="footer-follow" class="py-12">
-                    <p id="footer-follow-title" class="text-base font-semibold pb-8 uppercase text-slate-600 tracking-widest">Follow Us</p>
-                    <ul id="footer-follow-list" class="space-y-4 text-sm">
-                        <li id="footer-follow-link">
-                            <a href="#">Facebook</a>
-                        </li>
-                        <li id="footer-follow-link">
-                            <a href="#">Instagram</a>
-                        </li>
-                        <li id="footer-follow-link">
-                            <a href="#">Pinterest</a>
-                        </li>
-                        <li id="footer-follow-link">
-                            <a href="#">Twitter</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="footer-contact" class="py-12">
-                    <p id="footer-contact-title" class="text-base font-semibold pb-8 uppercase text-slate-600 tracking-widest">Contact us</p>
-                    <div id="footer-contact">
-                        <p class="text-xs">We’re Always Happy to Help</p>
-                    </div>
-                    <div id="footer-contact-link" class="py-4">
-                        <a href="#" class="text-2xl">
-                            us@coffeestyle.io
-                        </a>
-                    </div>
-                    <div id="footer-contact-powered" class="py-12">
-                        <a href="#" class="text-sm text-slate-600/50">
-                            Powered by Webflow
-                        </a>
-                    </div>
-                </div>
+              </div>
+              <div class="main-lifestyle__text">
+                <h5 id="main-lifestyle__title">
+                  <a href="#">How long does a cup of coffee keep you awake?</a>
+                </h5>
+                <p class="main-lifestyle__descript">
+                  It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth.
+                </p>
+                <p class="main-lifestyle__day">OCTOBER 9, 2018</p>
+              </div>
             </div>
 
-        </footer>
+            <div class="main-lifestyle__card">
+              <div class="main-lifestyle__img-wrap">
+                <a href="#">
+                  <img
+                    src="../asset/lifestyle_stories/cafe_lifestyle_post_3.jpg"
+                    alt="cafe lifestyle post 1"
+                    class="main-lifestyle__img"
+                  />
+                </a>
+                <div class="main-img__hover">
+                  <button type="submit" class="btn btn-explore" id="demo">
+                    Read the full story
+                  </button>
+                </div>
+              </div>
+              <div class="main-lifestyle__text">
+                <h5 id="main-lifestyle__title">
+                  <a href="#"
+                    >Recent research suggests that heavy coffee drinkers may
+                    reap health benefits.</a
+                  >
+                </h5>
+                <p class="main-lifestyle__descript">
+                  It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth.
+                </p>
+                <p class="main-lifestyle__day">OCTOBER 9, 2018</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--end life style -->
+        <!-- subcribe -->
+        <div class="w-full relative">
+          <section
+            id="main-subcribe"
+            class="-bg--clr-Ebony_Clay text-center py-20"
+          >
+            <div id="main-title" class="flex justify-center items-center">
+              <span class="main-title-wing bg-slate-700"></span>
+              <p class="main-title text-slate-400">
+                SIGN UP AND GET FREE COFFEE BAGS
+              </p>
+              <span class="main-title-wing bg-slate-700"></span>
+            </div>
+            <div class="main-sub">
+              <div id="main-sub-title" class="py-8">
+                <h2 class="text-white">Coffee Updates</h2>
+              </div>
+              <div id="main-sub-form">
+                <form action="#" method="get" class="flex justify-center items-center gap-4 max-sm:flex-col">
+                  <input
+                    type="text"
+                    name="userGmail"
+                    id="txtGmail"
+                    placeholder="Customer@coffeestyle.io"
+                    class="py-4 px-6 w-1/2 -bg--clr-Ebony_Clay border-2 border-slate-700 shadow-sm uppercase text-xs text-slate-700 tracking-widest"
+                  />
+                  <button type="submit" class="btn">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!--end subcribe -->
+      </main>
+      <!-- end main -->
+
+      <!-- footer -->
+      <footer id="footer" class="py-20 text-center">
+        <div id="footer-inform" class="space-y-6">
+          <div id="footer-inform-title">
+            <h5 class="font-semibold">CoffeeStyle.</h5>
+          </div>
+          <div id="footer-inform-describe">
+            <p class="text-sm">
+              Delivering the best coffee life since 1996. From coffee geeks to
+              the real ones.
+            </p>
+          </div>
+          <div id="footer-inform-born">
+            <a href="#" class="text-xs text-slate-400">
+              CoffeeStyle Inc. &copy; 1996
+            </a>
+          </div>
+        </div>
+        <div class="lg:flex lg:justify-evenly lg:text-left lg:pt-8">
+          <div id="footer-menu" class="py-12">
+            <p
+              id="footer-menu-title"
+              class="text-base font-semibold pb-8 uppercase text-slate-600 tracking-widest"
+            >
+              Menu
+            </p>
+            <ul id="footer-menu-list" class="space-y-4 text-sm">
+              <li id="footer-menu-link">
+                <a href="#home">Home</a>
+              </li>
+              <li id="footer-menu-link">
+                <a href="#products">Our Products</a>
+              </li>
+              <li id="footer-menu-link">
+                <a href="#about">About</a>
+              </li>
+              <li id="footer-menu-link">
+                <a href="#contact">Contact</a>
+              </li>
+              <li id="footer-menu-link">
+                <a href="#styleGuide">StyleGuide</a>
+              </li>
+            </ul>
+          </div>
+          <div id="footer-follow" class="py-12">
+            <p
+              id="footer-follow-title"
+              class="text-base font-semibold pb-8 uppercase text-slate-600 tracking-widest"
+            >
+              Follow Us
+            </p>
+            <ul id="footer-follow-list" class="space-y-4 text-sm">
+              <li id="footer-follow-link">
+                <a href="#">Facebook</a>
+              </li>
+              <li id="footer-follow-link">
+                <a href="#">Instagram</a>
+              </li>
+              <li id="footer-follow-link">
+                <a href="#">Pinterest</a>
+              </li>
+              <li id="footer-follow-link">
+                <a href="#">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div id="footer-contact" class="py-12">
+            <p
+              id="footer-contact-title"
+              class="text-base font-semibold pb-8 uppercase text-slate-600 tracking-widest"
+            >
+              Contact us
+            </p>
+            <div id="footer-contact">
+              <p class="text-xs">We’re Always Happy to Help</p>
+            </div>
+            <div id="footer-contact-link" class="py-4">
+              <a href="#" class="text-2xl"> us@coffeestyle.io </a>
+            </div>
+            <div id="footer-contact-powered" class="py-12">
+              <a href="#" class="text-sm text-slate-600/50">
+                Powered by Webflow
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
     </div>
-</body>
-
+    <!-- end container wrapper -->
+    <script src="../js/main_card_hover.js"></script>
+  </body>
 </html>
