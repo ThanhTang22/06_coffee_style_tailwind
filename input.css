@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font karla */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+@layer base{
+    body{
+        @apply font-sans text-lg
+    }
+    h1,h2,h3,h4,h5{
+        @apply font-normal
+    }
+    h1{
+        @apply text-5xl
+    }
+    h2{
+        @apply text-4xl
+    }
+    h3{
+        @apply text-3xl
+    }
+    h4{
+        @apply text-2xl
+    }
+    h5{
+        @apply text-xl
+    }
+    a{
+        @apply font-sans
+    }
+}
+
+@layer components{
+    .border-test{
+        @apply border-red-500 border-2
+    }
+
+    .container-wrapper{
+        @apply max-w-screen-xl px-12 mx-auto relative max-lg:px-8
+    }
+
+
+    /* btn */
+    .btn{
+        @apply bg-white text-black py-4 px-8 text-xs uppercase font-semibold tracking-widest
+    }
+
+
+
+
+    /* main */
+    .main-title{
+        @apply uppercase text-xs font-semibold tracking-widest -text--clr-Ebony_Clay/60 px-4
+    }
+    .main-title-wing{
+        @apply h-[2px] w-8 -bg--clr-Ebony_Clay/5 inline-block
+    }
+
+
+    /* header */
+
+    /* header menu flex */
+    .header-nav-menu__link-text{
+        @apply uppercase -text--clr-Ebony_Clay/60 text-xs font-semibold tracking-widest relative mx-4
+        after:w-0 after:h-1 after:absolute after:bottom-0 after:left-0 after:duration-200 after:ease-in-out
+        after:hover:w-full after:hover:-bg--clr-Cape_Palliser/50
+    }
+    /* .header-nav-menu__block{
+        @apply border-test 
+    } */
+    
+    /* header menu block */
+    
+    .nav-memu-block{
+        @apply after:content-none hover:text-black block py-4 
+    }
+
+
+    /* hero */
+    .main-hero-eyebrow{
+        @apply uppercase text-xs font-semibold tracking-widest
+    }
+
+
+    /** main card */
+    .main-card--img{
+        @apply relative  overflow-hidden
+    }
+
+    /*? style hover */
+    .main-img__hover{
+        @apply -z-50  absolute bottom-0  w-full h-full -bg--clr-Black_Pearl/20 duration-75 ease-in-out 
+    }
+    .main-card--img:hover > .main-img__hover{
+        @apply  z-50
+    }
+
+    .btn-explore{
+        @apply absolute left-0 right-0 -bottom-full w-11/12 mx-auto duration-300 ease-in-out
+    }
+
+    .main-card--img:hover  .btn-explore{
+        @apply  bottom-3
+    }
+
+
+
+    /** featured card */
+    .main-card{
+        @apply text-center w-full -bg--clr-Cape_Palliser/5 pb-8 md:max-w-md
+    }
+
+    .main-card-title{
+        @apply text-lg tracking-widest
+    }
+    
+
+    /* card img */
+    .main-card--img__sale{
+        @apply z-[51] absolute top-2 right-2 bg-white py-2 px-4
+    }
+    .main-card--img__sale-text{
+        @apply text-sm font-semibold -text--clr-Cape_Palliser
+    }
+    
+
+    /* card price  */
+    .main-card--price-text{
+        @apply text-sm -text--clr-Ebony_Clay/70
+    }
+    .main-card--price__sale-text{
+        @apply text-xl -text--clr-Cape_Palliser
+    }
+
+    /* products card */
+    .main-card-products{
+        @apply w-full md:max-w-xs
+    }
+
+
+
+
+    /** style */
+    .main-lifestyle-stories{
+        @apply sm:flex sm:gap-4 sm:justify-center sm:items-start sm:flex-wrap 
+    }
+    .main-lifestyle__card{
+        @apply text-center w-full  min-h-[40rem] space-y-8 mb-8 md:max-w-80 sm:text-left
+    }
+
+    
+    /* style img */
+    .main-lifestyle__img-wrap{
+        @apply  h-72 relative overflow-hidden
+    }
+    .main-lifestyle__img{
+        @apply h-full w-full bg-cover bg-center md:scale-x-[2]
+    }
+
+    /*? style hover */
+    .main-lifestyle__img-wrap:hover > .main-img__hover{
+        @apply  z-50
+    }
+    .main-lifestyle__img-wrap:hover  .btn-explore{
+        @apply  bottom-3
+    }
+
+    /* style text */
+    .main-lifestyle__text{
+        @apply space-y-4
+    }
+    .main-lifestyle__descript{
+        @apply text-base
+    }
+    .main-lifestyle__day{
+        @apply text-xs font-medium tracking-widest py-4
+    }
+
+}
+
+@layer utilities{
+
+
+    /** hidden, visible */
+    .content-hidden{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .content-visible{
+        visibility: visible;
+        height: auto;
+        width: auto;
+    }
+
+    /** icon awesome */
+    .toggle__hamburger::before,
+    .toggle__hamburger::after,
+    .toggle__hamburger{
+        width: 100%;
+        height: 2px;
+        background-color: gray;
+        
+        display: block;
+        margin: 0 auto;
+
+
+    }
+    .toggle__hamburger::before,
+    .toggle__hamburger::after{
+        content: "";
+        width: 50%;
+    }
+    .toggle__hamburger::before{
+        transform:translateY(-8px);
+        position: absolute;
+        left: 0;
+    }
+    .toggle__hamburger::after{
+        transform:translateY(8px);
+        position: absolute;
+        right: 0;
+    }
+
+
+    /** hero background */
+    /* .main-hero{
+        background-image:  linear-gradient(
+            60deg,
+            rgba(5, 8, 39, 0.5),
+            rgba(5, 8, 39, 0.7)
+        ),
+        url(../asset/background/coffee_Mugs.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: auto, cover;
+    } */
+
+    .main-hero{
+        @apply bg-hero bg-bottom bg-no-repeat bg-cover
+    }
+
+    /* .main-parallax--img{
+        background-image: url(../asset/background/parallax.jpg);
+        height: 350px;
+        margin-inline: -2rem;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    } */
+    .main-parallax--img{
+
+        @apply bg-parallax h-80 -mx-8 bg-center bg-no-repeat bg-cover bg-fixed
+    }
+
+}
