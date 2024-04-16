@@ -25,11 +25,11 @@ module.exports = {
       },
 
       backgroundImage:{
-        'hero': "linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url(../asset/background/coffee_Mugs.jpg)",
+        'hero': "linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url(./asset/background/coffee_Mugs.jpg)",
 
         // 'test': "linear-gradient(to right bottom, rgba('#7ed56f',0.8), rgba('#28b485',0.8)), url('../src/images/icon-bg.jpg')",
 
-        'parallax': 'url(../asset/background/parallax.jpg)',
+        'parallax': 'url(./asset/background/parallax.jpg)',
       }
 
 

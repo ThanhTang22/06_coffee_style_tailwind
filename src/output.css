@@ -1376,7 +1376,7 @@ a {
     } */
 
 .main-hero {
-  background-image: linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url(../asset/background/coffee_Mugs.jpg);
+  background-image: linear-gradient(60deg,rgba(5, 8, 39, 0.5),rgba(5, 8, 39, 0.7)),url(./asset/background/coffee_Mugs.jpg);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -1397,7 +1397,7 @@ a {
   margin-left: -2rem;
   margin-right: -2rem;
   height: 20rem;
-  background-image: url(../asset/background/parallax.jpg);
+  background-image: url(./asset/background/parallax.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
